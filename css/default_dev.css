@@ -27,7 +27,7 @@ body {
 	width:670px;
 	height:625px;
 	position: relative;
-	order: 2;
+	margin-bottom: 20px;
 }
 
 #garden {
@@ -82,34 +82,33 @@ body {
 	display:none;
 }
 
-#code {
+.code {
 	/* float: left; */
-	width: 550px;
+	width: 600px;
 	min-height: 480px;
 	color: #333;
 	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
 	font-size: 12px;
-	order: 1;
 }
 
-#code .string{
+.code .string{
 	color: #2a36ff;
 }
 
-#code .keyword{
+.code .keyword{
 	color: #7f0055;
 	font-weight:bold;
 }
 
-#code .placeholder{
+.code .placeholder{
 	margin-left:15px;
 }
 
-#code .space{
+.code .space{
 	margin-left:7px;
 }
 
-#code .comments{
+.code .comments{
 	color: #3f7f5f;
 }
 
@@ -137,10 +136,10 @@ body {
 	#content{
 		width: 100%;
 	}
-	#code{
+	/* .code{
 		order: 2;
 	}
 	#loveHeart{
 		order: 1;
-	}
+	} */
 }
