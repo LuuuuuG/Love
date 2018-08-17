@@ -102,9 +102,9 @@
 		let winWidth = $(window).width()
 		console.log(winWidth)
 		if(winWidth < 1000){
-			$('#content').css({'top' : '40%'})
+			$('#content').css({'margin-top' : '100px','position':'relative', 'left' : '0','top' : '0','transform':'translate(0,0)'})
 			$('#phoneHide').css({'display' : 'none'})
-			$('#pcHide').css({'display' : 'block' ,'min-height' : '600px'})
+			$('#pcHide').css({'display' : 'block' ,'min-height' : '600px','width':'700px'})
 		} else {
 			$('#phoneHide').css({'display' : 'block'})
 			$('#pcHide').css({'display' : 'none'})
