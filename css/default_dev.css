@@ -27,6 +27,7 @@ body {
 	width:670px;
 	height:625px;
 	position: relative;
+	order: 2;
 }
 
 #garden {
@@ -83,11 +84,12 @@ body {
 
 #code {
 	/* float: left; */
-	width: 500px;
+	width: 550px;
 	min-height: 480px;
 	color: #333;
 	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
 	font-size: 12px;
+	order: 1;
 }
 
 #code .string{
@@ -134,5 +136,11 @@ body {
 @media screen and (max-width: 577px){
 	#content{
 		width: 100%;
+	}
+	#code{
+		order: 2;
+	}
+	#loveHeart{
+		order: 1;
 	}
 }
