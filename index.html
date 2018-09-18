@@ -17,6 +17,7 @@
 </head>
 
 <body>
+	<audio id="audio" src="http://go.163.com/2018/0209/mengniu/audio/bgm.mp3" autoplay loop></audio>
 	<div id="mainDiv">
 		<div id="content">
 			<div class="code" id="phoneHide">
@@ -131,6 +132,14 @@
 			adjustCodePosition();
 			$(".code").typewriter();
 		}
+		wx.config({debug:false,appId: 'wx2d2fd8b8b9efa1ad',timestamp: 10000,nonceStr: 'hellokawa',signature: '9b9cb0846a20e5acfb5bee311daafd5570145dba',jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'chooseImage', 'uploadImage', 'getNetworkType']});
+			wx.ready(function(){
+				audio.play();
+			})
+		wx.config({debug:false,appId: 'wx2d2fd8b8b9efa1ad',timestamp: 10000,nonceStr: 'hellokawa',signature: '9b9cb0846a20e5acfb5bee311daafd5570145dba',jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'chooseImage', 'uploadImage', 'getNetworkType']});
+		wx.ready(function(){
+			document.getElementById('audio').play();
+		});
 	</script>
 	<img src="https://github.com/LuuuuuG/Love/blob/master/img/share.png?raw=true" width="0" height= "0" />
 </body>
